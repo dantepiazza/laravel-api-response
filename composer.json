@@ -1,0 +1,49 @@
+{
+    "name": "dantepiazza/laravel-api-response",
+    "description": "A fluent, expressive API response builder for Laravel 10+",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "api", "response", "json", "rest"],
+    "authors": [
+        {
+            "name": "Dante Piazza Quiroga",
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DantePiazza\\LaravelApiResponse\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DantePiazza\\LaravelApiResponse\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DantePiazza\\LaravelApiResponse\\ApiResponseServiceProvider"
+            ],
+            "aliases": {
+                "ApiResponse": "DantePiazza\\LaravelApiResponse\\Facades\\ApiResponse"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
