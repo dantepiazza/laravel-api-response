@@ -6,7 +6,7 @@
     "keywords": ["laravel", "api", "response", "json", "rest"],
     "authors": [
         {
-            "name": "Dante Piazza Quiroga",
+            "name": "Dante Piazza Quiroga"
         }
     ],
     "require": {
