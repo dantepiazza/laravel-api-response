@@ -32,6 +32,9 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        },
         "laravel": {
             "providers": [
                 "DantePiazza\\LaravelApiResponse\\ApiResponseServiceProvider"
